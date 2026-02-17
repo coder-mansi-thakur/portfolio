@@ -3,6 +3,7 @@ import { playground } from '@/data/content';
 export default function Playground() {
   return (
     <section id="playground">
+      <span className="section-number">V</span>
       <h2 className="section-title">Playground</h2>
       <div className="card-grid">
         {playground.map((item) => (

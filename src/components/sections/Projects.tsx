@@ -3,7 +3,8 @@ import { projects } from '@/data/content';
 export default function Projects() {
   return (
     <section id="projects">
-      <h2 className="section-title">Projects</h2>
+      <span className="section-number">II</span>
+      <h2 className="section-title">Work</h2>
       <div className="card-grid">
         {projects.map((project) => (
           <article key={project.title} className="card">
@@ -14,8 +15,8 @@ export default function Projects() {
                 <span key={tag} className="tag">{tag}</span>
               ))}
             </div>
-            <a href={project.link.href} target="_blank" rel="noreferrer">
-              {project.link.label} →
+            <a href={project.link.href} target="_blank" rel="noreferrer" className="card-link">
+              {project.link.label}
             </a>
           </article>
         ))}

@@ -2,21 +2,21 @@ import { contact } from '@/data/content';
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-narrow contact-content">
-      <h2 className="section-title">Get in Touch</h2>
-      <p style={{ color: 'var(--color-text-muted)', marginBottom: 'var(--space-md)' }}>
-        Open to new opportunities, collaborations, or just a chat about design systems and frontend craft.
-      </p>
+    <section id="contact" className="contact-content">
+      <span className="section-number">VI</span>
+      <h2 className="section-title">Contact</h2>
       <a href={`mailto:${contact.email}`} className="contact-email">
         {contact.email}
       </a>
-      <div className="social-list">
+      <ul className="social-list">
         {contact.socials.map((social) => (
-          <a key={social.label} href={social.href} target="_blank" rel="noreferrer">
-            {social.label}
-          </a>
+          <li key={social.label}>
+            <a href={social.href} target="_blank" rel="noreferrer">
+              {social.label}
+            </a>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

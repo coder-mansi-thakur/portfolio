@@ -1,10 +1,10 @@
 export const profile = {
-  name: 'Avery Quinn',
-  role: 'Frontend Engineer',
-  location: 'Remote (UTC-5)',
+  name: 'Mansi Thakur',
+  role: 'Senior Full-Stack Engineer',
+  location: 'Gurugram, India',
   summary:
-    'I craft expressive, performant interfaces with React, TypeScript, and a design-forward mindset. I enjoy pairing thoughtful UX with solid engineering practices.',
-  availability: 'Available for new opportunities and select freelance collaborations.'
+    'Dynamic and results-oriented Senior Full-Stack Engineer with over 4 years of experience in developing robust web applications. Proficient in React.js, Next.js, Node.js, and Django, with a strong background in designing and implementing scalable solutions. Skilled in collaborating with cross-functional teams to deliver high-quality products on time.',
+  availability: 'Excited about the opportunity to leverage expertise in a fast-paced environment to drive innovation and achieve business goals.'
 };
 
 export const hero = {
@@ -53,46 +53,46 @@ export const projects = [
 
 export const experience = [
   {
-    role: 'Senior Frontend Engineer',
-    company: 'Brightloop',
-    period: '2022 — Present',
+    role: 'Sr. Software Engineer',
+    company: 'Pasarpolis',
+    period: 'Mar 2022 — Present',
     summary:
-      'Shipping product-led growth experiments, leading accessibility, and mentoring teams on design system adoption and performance budgets.'
+      'Spearheaded web application development for claim filing using ReactJS, NextJS, and Django. Implemented 15 new features resulting in 30% surge in daily active users. Cut page load times by 30% and reduced user drop-off rates by 40%.'
   },
   {
-    role: 'Staff Engineer (Consulting)',
-    company: 'Independent',
-    period: '2019 — 2022',
+    role: 'Jr. Associate Software Engineer',
+    company: 'Unthinkable Solutions',
+    period: 'Oct 2019 — Mar 2022',
     summary:
-      'Partnered with startups to build MVPs, refine onboarding funnels, and deliver maintainable component libraries with strong documentation.'
-  },
-  {
-    role: 'Frontend Engineer',
-    company: 'Northbeam',
-    period: '2016 — 2019',
-    summary:
-      'Focused on dashboards, real-time data viz, and resilient client-side architecture across browsers and devices.'
+      'Developed a UI kit accelerating form development by 70%. Integrated Google Maps API reducing user navigation time by 15%. Built E-commerce B2B platform and end-to-end appointment scheduler app.'
   }
 ];
 
 export const blogPosts = [
   {
+    title: 'Building this portfolio',
+    year: '2026',
+    href: 'https://example.com/posts/building-portfolio'
+  },
+  {
     title: 'Design tokens that developers actually like',
-    date: 'Jan 2026',
-    excerpt: 'A practical checklist for rolling out tokens without breaking teams or velocity.',
+    year: '2026',
     href: 'https://example.com/posts/design-tokens'
   },
   {
-    title: 'Shipping playful interfaces without hurting performance',
-    date: 'Nov 2025',
-    excerpt: 'Balancing motion, intent, and Core Web Vitals in modern React apps.',
+    title: 'Shipping playful interfaces',
+    year: '2025',
     href: 'https://example.com/posts/playful-perf'
   },
   {
-    title: 'Docs that convert users into champions',
-    date: 'Sep 2025',
-    excerpt: 'Structuring knowledge bases for both search engines and real humans.',
-    href: 'https://example.com/posts/docs-that-convert'
+    title: 'Why I love CSS',
+    year: '2025',
+    href: 'https://example.com/posts/css-love'
+  },
+  {
+    title: 'The joy of web experiments',
+    year: '2024',
+    href: 'https://example.com/posts/web-experiments'
   }
 ];
 
@@ -118,10 +118,10 @@ export const playground = [
 ];
 
 export const contact = {
-  email: 'hello@averyquinn.dev',
+  email: 'coder.mansi.thakur@gmail.com',
+  phone: '123-456-7890',
   socials: [
-    { label: 'GitHub', href: 'https://github.com' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com' },
-    { label: 'Dribbble', href: 'https://dribbble.com' }
+    { label: 'LinkedIn', href: 'https://linkedin.com/in/mansi-thakur/' },
+    { label: 'Medium', href: 'https://medium.com/@coder.mansi.thakur' }
   ]
 };

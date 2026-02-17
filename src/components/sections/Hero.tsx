@@ -1,25 +1,29 @@
-import { hero } from '@/data/content';
+import Link from 'next/link';
+
+const sections = [
+  { name: 'About', href: '/about', number: 'I' },
+  { name: 'Work', href: '/work', number: 'II' },
+  { name: 'Experience', href: '/experience', number: 'III' },
+  { name: 'Thoughts', href: '/thoughts', number: 'IV' },
+  { name: 'Playground', href: '/playground', number: 'V' },
+  { name: 'Contact', href: '/contact', number: 'VI' },
+];
 
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero-content">
-        <h1>{hero.headline}</h1>
-        <p className="hero-blurb">{hero.blurb}</p>
-        <div className="hero-ctas">
-          <a href={hero.primaryCta.href} className="btn btn-primary">
-            {hero.primaryCta.label}
-          </a>
-          <a href={hero.secondaryCta.href} className="btn btn-secondary">
-            {hero.secondaryCta.label}
-          </a>
-        </div>
-        <ul className="highlights-list">
-          {hero.highlights.map((highlight, i) => (
-            <li key={i}>{highlight}</li>
+      <nav aria-label="Table of contents">
+        <ul className="toc-list">
+          {sections.map((section) => (
+            <li key={section.href} className="toc-item">
+              <Link href={section.href} className="toc-link">
+                <span>{section.name}</span>
+              </Link>
+              <span className="toc-number">{section.number}</span>
+            </li>
           ))}
         </ul>
-      </div>
+      </nav>
     </section>
   );
 }
